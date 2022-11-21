@@ -1,0 +1,117 @@
+.home {
+
+    //hero section
+    .hero {
+        &__title {
+            max-width: 710px;
+            padding: 120px 0;
+
+            @media (max-width: $tab) {
+                padding: 64px 0 40px;
+            }
+        }
+    }
+
+    //hero section end
+
+    //slider section
+    .slider {
+        &__container {
+            display: flex;
+            gap: 32px;
+            overflow: scroll;
+            padding: $conteiner-size;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+
+        &__item {
+            min-width: 544px;
+
+            @media (max-width: $tab) {
+                min-width: 257px;
+            }
+        }
+
+        &__img {
+            margin-bottom: 16px;
+        }
+    }
+
+    //slider section end
+    .info {
+        padding: 160px;
+        @media (max-width: $tab) {
+            padding: 64px 16px 48px;
+        }
+
+        &__container {
+            display: flex;
+            justify-content: space-between;
+            @media (max-width: $tab){
+                flex-direction: column;
+                padding: 64px 20px 48px;
+                gap: 76px;
+            }
+        }
+
+        &__sub-title {
+            padding: 0 210px 0 0;
+            @media (max-width: $tab){
+             padding: 0px;
+    
+        }
+    
+    }
+    }
+    
+    .posts {
+        margin-bottom: 128px;
+
+        &__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+
+            @media (max-width: $tab) {
+                flex-direction: column;
+                align-items: flex-start;
+                margin-bottom: 48px;
+            }
+        }
+
+        &__view-all {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 8px;
+        }
+
+        &__container-img {
+            display: flex;
+            gap: 34px;
+
+            @media (max-width: $tab) {
+                flex-direction: column;
+                gap: 48px;
+            }
+        }
+        &__img{
+            width: 310px;
+        }
+        &__description{
+            padding: 20px 0 0 0 ;
+        }
+
+        .posts {
+            width: 33%;
+
+            @media (max-width: $tab) {
+                width: 100%;
+            }
+        }
+    }
+}
